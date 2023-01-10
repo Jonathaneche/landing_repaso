@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 90vw;
+    background-color: rgb(225, 233, 230);
+}
+
+
+/****   Tipografia ****/
+
+
+
+
+
+/****   Parte inicial   *****/
+
+.baner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.titulo{
+    padding: 1.5rem 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.menu {
+    margin-bottom: 2rem;
+}
+
+.menu a{
+    text-decoration: none;
+    font-style: italic;
+    color: grey;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.menu a:hover{
+    background-color: rgb(230, 51, 51);
+    color: rgb(255, 255, 255);
+}
+
+.hero{
+    background-color: #cce8f4;
+}
+
+.hero .hero-imagen-fondo{
+    background-image: url(../img/pic01.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 30rem;
+    position: relative;
+    
+}
+
+.hero .contenido-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido-banner {
+    background-color: rgb(41, 37, 37);
+    padding: 1.5rem 2.5rem;
+    position: absolute;
+   
+
+
+}
+
+.contenido-banner>h2 {
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.contenido-banner>p {
+    color:rgb(168, 45, 45); 
+}
+
+
+
+
+
+
+
+
+
+
+.poligono{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%);
+}
