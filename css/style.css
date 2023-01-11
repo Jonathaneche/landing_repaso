@@ -7,7 +7,7 @@ body{
 
 .contenedor {
     margin: 0 auto;
-    max-width: 90vw;
+    max-width: 80vw;
     background-color: rgb(225, 233, 230);
 }
 
@@ -157,5 +157,77 @@ body{
 }
 
 .categoria-botones .learn-more {
+    background-color: black;
+}
+
+/***********portafolio*************/
+
+.titulo-portafolio {
+    text-align: center;
+    margin: 2rem;
+
+}
+
+.proyectos {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.proyecto {
+    max-width: 25vw;
+    background-color: white;
+}
+
+.proyecto img {
+    width: 100%;
+}
+
+.proyecto-boton {
+    background-color: black;
+    color: white;
+    padding: 6px;
+    font-weight: 700;
+}
+
+.proyecto-info {
+    padding: 2rem;
+}
+
+/****** seccion blog ********/
+
+.titulo-blog {
+text-align: center;
+margin: 2rem;
+}
+
+.publicaciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.publicacion img {
+    width: 100%;
+}
+
+.publicacion-info span {
+    font-style: italic ;
+}
+
+.publicacion {
+    background-color: white;
+}
+
+.publicacion-info button {
+    background-color: rgb(168, 45, 45);
+    padding: 0.5rem 3rem;
+    color: white;
+    font-weight: 700;
+    margin: 0rem 0.3rem; 
+}
+
+.publicacion-info .comments {
     background-color: black;
 }
