@@ -46,7 +46,7 @@
 }
 
 .menu a:hover{
-    background-color: rgb(230, 51, 51);
+    background-color: rgb(168, 45, 45);
     color: rgb(255, 255, 255);
 }
 
@@ -58,7 +58,7 @@
     background-image: url(../img/pic01.jpg);
     background-repeat: no-repeat;
     background-size: auto;
-    height: 30rem;
+    height: 27rem;
     position: relative;
     text-align: center;
 }
@@ -92,6 +92,13 @@
 .categorias {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+}
+
+.categorias div:nth-child(2){
+    -webkit-box-shadow: 0px 2px 8px 2px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.45);
+        box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.45);
 }
 
 .categoria {
@@ -99,6 +106,16 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 1.5rem;
+}
+
+.categoria h3 {
+    font-size: 1.3rem;
+    margin: 1.3rem 0;
+}
+
+.categoria p {
+    line-height: 1.5rem;
 }
 
 .poligono{
@@ -135,14 +152,17 @@
 
 .categoria-botones button {
     background-color: rgb(168, 45, 45);
-    padding: 0.5rem 3rem;
+    padding: 0.8rem 4rem;
     color: white;
     font-weight: 700;
     margin: 0rem 0.3rem;
+    border: 0;
+    border-radius: 5px;
 }
 
 .categoria-botones .learn-more {
     background-color: black;
+    
 }
 
 /***********portafolio*************/
@@ -168,11 +188,22 @@
     width: 100%;
 }
 
+.proyecto-titulo {
+    margin: 1rem 0px;
+}
+
+.proyecto-parrafo{
+    margin: 1.5rem 0;
+    line-height: 1.5rem;
+}
+
 .proyecto-boton {
     background-color: black;
     color: white;
-    padding: 6px;
+    padding: 1rem 1.5rem;
     font-weight: 700;
+    border: 0;
+    border-radius: 5px;
 }
 
 .proyecto-info {
@@ -192,17 +223,32 @@
     gap: 1.5rem;
 }
 
+.publicacion {
+    background-color: white;
+}
+
+.publicacion-info {
+    padding: 2rem;
+}
+
+
 .publicacion img {
     width: 100%;
+}
+
+.publicacion-titulo {
+    margin: 1rem 0px;
 }
 
 .publicacion-info span {
     font-style: italic ;
 }
 
-.publicacion {
-    background-color: white;
+.publicacion-parrafo {
+    margin: 1.5rem 0;
+    line-height: 1.5rem;
 }
+
 
 .publicacion-info button {
     background-color: rgb(168, 45, 45);
@@ -210,10 +256,15 @@
     color: white;
     font-weight: 700;
     margin: 0rem 0.3rem; 
+    border: 0;
+    border-radius: 5px;
 }
+
 
 .publicacion-info .comments {
     background-color: black;
+    border: 0;
+    border-radius: 5px;
 }
 
 
@@ -223,14 +274,15 @@ footer {
     background-color: rgb(225, 233, 230);
     color: white;
     margin-top: 2rem;
+    background-color: rgb(44, 44, 44);
 
 
 }
 
 .footer-section-1 {
-    background-color: rgb(44, 44, 44);
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
 }
 
 .titulo-footer-section{
@@ -298,16 +350,18 @@ footer {
 /**********  Footer seccion 2 ************/
 
 .footer-section-2 {
-    background-color: rgb(44, 44, 44);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .links {
-    margin-bottom: ;
     display: grid;
     flex-direction: column;
+}
+
+.links a:last-child{
+    border-bottom: 0px;
 }
 
 .links-link {
@@ -319,27 +373,60 @@ footer {
 
 /**********  Footer Contacto-info ************/
 
- .direccion {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
- }
-
  .redes-sociales {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    margin-bottom: 2rem;
  }
 
 .redes-sociales i{
-    font-size: 3rem;
+    margin-right: 1rem;
+    font-size: 2.4rem;
 }
+
+.direccion {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(87, 87, 87, 0.767);
+ }
 
  .email {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(87, 87, 87, 0.767);
  }
 
  .telefono {
     display: grid;
     grid-template-columns: 1fr 2fr;
  }
+
+.contacto-info p {
+    color: lightgray;
+    font-size: .8rem;
+    line-height: 1.3rem;
+}
+
+/**********  Footer seccion 3 ************/
+
+.footer-section-3 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.copyright{
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr .8fr 1fr;
+    text-align: center;
+    background-color: rgb(54, 53, 53);
+}
+
+.parrafo-copyright a {
+    color: white;
+}
