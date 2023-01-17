@@ -167,6 +167,8 @@
 
 /***********portafolio*************/
 
+
+
 .titulo-portafolio {
     text-align: center;
     margin: 2rem;
@@ -174,13 +176,13 @@
 
 .proyectos {
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(3, 1fr); */
     gap: 1.5rem;
 }
 
 .proyecto {
-    max-width: 25vw;
+    width: auto;
     background-color: white;
 }
 
@@ -210,11 +212,23 @@
     padding: 2rem;
 }
 
+.portafolio, .blog {
+    background-color: rgb(243, 243, 243);
+}
+
+.portafolio {
+    padding: 1.5rem 0;
+}
+
 /****** seccion blog ********/
+
+.blog {
+    padding-bottom: 1.5rem;
+}
 
 .titulo-blog {
     text-align: center;
-    margin: 2rem;
+    padding: 2rem;
 }
 
 .publicaciones {
@@ -502,4 +516,98 @@ input:focus {
 textarea:focus {
     outline: 0;
     border: 1px solid #97d848;
+}
+
+/*************** Responsive movil******************/
+
+
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenido-banner .hero-titulo {
+        font-size: .8rem;
+    }
+
+    .contenido-banner .hero-parrafo {
+        font-size: .7rem;
+    }
+
+    .categorias {
+        grid-template-columns: 1fr;
+    }
+
+    .categoria-botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
+
+    .categoria-botones button{
+        padding: 1.5rem;
+        margin: 0;
+    }
+
+    .start, .learn-more{
+        
+        width: 40%;
+        margin: 0;
+    }
+
+    .proyectos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .proyecto {
+        max-width: 40vw;
+    }
+
+    .publicaciones {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        width: 70vw;
+    }
+
+    .footer-section-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-section-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .copyright {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .parrafo-copyright {
+        margin: .5rem 0;
+    }
+
+}
+
+.funcion-js {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.funcion {
+    display: flex;
+    justify-content: center;
+}
+
+.calcular{
+    display: flex;
+    justify-items: center;
 }
