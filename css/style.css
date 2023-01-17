@@ -471,6 +471,7 @@ footer {
     margin-top: 2rem;
 }
 
+/* Formulario */
 
 form {
     display: flex;
@@ -596,6 +597,8 @@ textarea:focus {
     }
 
 }
+
+/* Funcion */
 
 .funcion-js {
     text-align: center;
